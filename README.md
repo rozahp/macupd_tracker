@@ -1,7 +1,7 @@
 # macupd_tracker
 
 This program process MACupd data from DD-WRT router. Every hour current status is written to a logfile and a HTML-report is also created/updated. When an unknown MAC-adress is received for the 1st time an alert-function is called (see below about the alerter function) and the logfile and the HTML-report is created/updated.
-x
+
 When the program is started it tries to read the status from the current logfile. The tracker status is cleared every midnight and logfiles are rotated. On exit or if an exception occur, status is saved to current logfile and the HTML-report is updated. The name of the logfiles are changed every day (se format below)
 
 Errors are dumped to a logfile (see below).
