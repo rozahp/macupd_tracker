@@ -31,7 +31,7 @@ class Reporter:
     ##
     ## Check Row
     ##
-    def reporter_check_row(self, row):
+    def reporter_check_row(self, row, filename):
         """Check that rows from logfiles are sane"""
         #
         # Check for comments
@@ -142,7 +142,7 @@ class Reporter:
                 #
                 # Check row
                 #
-                row_dict=self.reporter_check_row(row)
+                row_dict=self.reporter_check_row(row, filename)
                 if row_dict==False: continue
                 #
                 # Fix mac name
